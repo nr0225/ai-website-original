@@ -97,6 +97,17 @@
   <div class="container">
     <h2>聯絡與預約</h2>
     <p class="lead">丟訊息給我，48 小時內回覆。</p>
+
+    <!-- ✅ 新增：Formspree 表單（其餘不動） -->
+    <form class="contact-form" action="https://formspree.io/f/xgvzrzgj" method="POST">
+      <div class="grid-2">
+        <input type="text" name="name" placeholder="你的名字" required>
+        <input type="email" name="_replyto" placeholder="你的 Email" required>
+      </div>
+      <textarea name="message" rows="5" placeholder="請簡述你的需求（行業、預算、時程）" required></textarea>
+      <button class="btn primary" type="submit">送出需求</button>
+    </form>
+
     <div class="contact-grid">
       <div class="contact-card"><h4>LINE</h4><p><a href="https://line.me/ti/p/nr0678" target="_blank">LINE</a></p></div>
       <div class="contact-card"><h4>Telegram</h4><p><a href="https://t.me/Randy_Hau" target="_blank">Telegram</a></p></div>
