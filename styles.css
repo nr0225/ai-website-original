@@ -45,19 +45,19 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",s
 /* === 表單可讀性加強（桌機＆手機） === */
 .contact-form input,
 .contact-form textarea {
-    font-size: 24px; /* 桌機輸入文字大小 */
+    font-size: 26px; /* 桌機輸入文字大小 */
     line-height: 1.45;
     padding: 12px 14px;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    font-size: 24px; /* 桌機 placeholder 大小 */
+    font-size: 26px; /* 桌機 placeholder 大小 */
     opacity: .75;
 }
 
 .contact-form button {
-    font-size: 20px;
+    font-size: 22px;
     padding: 10px 16px;
 }
 
@@ -67,6 +67,6 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",s
     .contact-form textarea,
     .contact-form input::placeholder,
     .contact-form textarea::placeholder {
-        font-size: 20px; /* 手機輸入與 placeholder 大小 */
+        font-size: 22px; /* 手機輸入與 placeholder 大小 */
     }
 }
