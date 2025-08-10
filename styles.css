@@ -42,4 +42,31 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",s
   .menu a{display:block;margin:8px 6px}
   .nav-toggle{display:inline-block}
   .hero{padding-top:84px}
+/* === 表單可讀性加強（桌機＆手機） === */
+.contact-form input,
+.contact-form textarea {
+  font-size: 20px;       /* 輸入文字大小 */
+  line-height: 1.45;
+  padding: 12px 14px;    /* 讓文字不貼邊 */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 20px;       /* placeholder 大小 */
+  opacity: .75;
+}
+
+.contact-form button {
+  font-size: 18px;
+  padding: 10px 16px;
+}
+
+/* 手機微調，避免擠太滿 */
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    font-size: 18px;
+  }
 }
