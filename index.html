@@ -1,163 +1,144 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Randy AI 自動化工坊｜覺醒 × 自動化 × 成效</title>
-  <meta name="description" content="用 GPT-5 + 自動化幫你省下 90% 重複工作，把時間還給生活。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="logo" href="#">Randy AI</a>
-    <button class="nav-toggle" aria-label="開啟選單" onclick="toggleMenu()"><span></span><span></span><span></span></button>
-    <nav id="menu" class="menu">
-      <a href="#hero">首頁</a><a href="#services">服務</a><a href="#cases">案例</a><a href="#about">關於</a><a href="#contact">聯絡</a>
-    </nav>
-  </div>
-</header>
-
-<section id="hero" class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <h1>覺醒你的業務，自動化你的流程</h1>
-      <p>用 <b>GPT-5</b> + 流程設計 + 雲端自動化，幫你省下 90% 重複工作。專注創作與成交，其餘交給系統。</p>
-      <div class="cta-row">
-        <a href="#contact" class="btn primary">預約 20 分鐘諮詢</a>
-        <a href="#services" class="btn ghost">看看能幫你什麼</a>
-      </div>
-      <div class="badges"><span>48 小時可上線</span><span>雲端部署</span><span>安全合規</span></div>
-    </div>
-    <div class="card">
-      <h3>即刻可交付｜報價單一鍵生成</h3>
-      <ul>
-        <li>收單 → GPT-5 產生估價/提案</li>
-        <li>Google Docs 模板 → PDF → 一鍵寄送</li>
-        <li>含版型與話術，明天就能用</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="section">
-  <div class="container">
-    <h2>服務與收費方案</h2>
-    <p class="lead">透明定價，快速上線，依需求彈性擴充。</p>
-
-    <!-- 💰 收費方案 -->
-    <div class="pricing-cards">
-      <article class="price-card">
-        <h3>入門版</h3>
-        <p class="price">NT$ 9,800</p>
-        <ul>
-          <li>單一流程自動化</li>
-          <li>1 次線上教學</li>
-          <li>7 天保固調整</li>
-        </ul>
-      </article>
-
-      <article class="price-card">
-        <h3>進階版</h3>
-        <p class="price">NT$ 19,800</p>
-        <ul>
-          <li>最多 3 條流程</li>
-          <li>LINE/Telegram 串接</li>
-          <li>14 天保固調整</li>
-        </ul>
-      </article>
-
-      <article class="price-card">
-        <h3>專業版</h3>
-        <p class="price">NT$ 29,800+</p>
-        <ul>
-          <li>客製化流程設計</li>
-          <li>跨平台整合</li>
-          <li>1 個月顧問支持</li>
-        </ul>
-      </article>
-    </div>
-    <!-- 💰 收費方案結束 -->
-
-    <h2>服務｜先給你最有感的三項</h2>
-    <p class="lead">不碰複雜硬體，先用雲端自動化幫你見效。成效跑出來，再擴充。</p>
-    <div class="cards">
-      <article class="svc-card">
-        <h3>#1 報價單一鍵生成系統（雲端版）</h3>
-        <ul><li>收集需求 → GPT-5 自動生成估價/提案</li><li>Docs 模板 → PDF → 一鍵寄送</li><li>可加價：多語、條款庫、品牌版面</li></ul>
-        <div class="pill">48 小時交付</div>
-      </article>
-      <article class="svc-card">
-        <h3>#2 LINE/Telegram 自動客服｜潛客培育</h3>
-        <ul><li>FAQ/產品目錄/導購話術自動回覆</li><li>可串金流/表單/客戶標籤</li><li>可加價：知識庫餵養、營銷腳本</li></ul>
-        <div class="pill">7–10 天交付</div>
-      </article>
-      <article class="svc-card">
-        <h3>#3 內容產製自動化｜字幕、剪輯、上架</h3>
-        <ul><li>長影片 → 自動切片 Shorts/Reels</li><li>自動上字幕、縮圖版型、排程上架</li><li>可加價：多平台同步、腳本生成</li></ul>
-        <div class="pill">5–7 天交付</div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="cases" class="section alt">
-  <div class="container grid-2">
-    <div>
-      <h2>案例與成效</h2>
-      <p>估價時間：2–3 小時 → <b>10 分鐘內</b></p>
-      <p>漏單率：自動提醒後下降 <b>50%</b></p>
-      <p>省時：每週 ≥ <b>8 小時</b></p>
-    </div>
-    <div class="case-card"><h3>Demo 影片</h3><p>之後可嵌 YouTube 或放流程截圖。</p></div>
-  </div>
-</section>
-
-<section id="about" class="section">
-  <div class="container grid-2">
-    <div>
-      <h2>關於 Randy</h2>
-      <p>自由接案者，專注把 AI 自動化落地到每一個可省時的環節。經歷低谷也完成覺醒——現在只做一件事：讓系統替你省時間，你替人生創造價值。</p>
-      <ul class="ticks"><li>GPT-5 提示工程/策略</li><li>Google Workspace 自動化</li><li>n8n / Make / Zapier</li><li>Python FastAPI</li></ul>
-    </div>
-    <div class="about-card">
-      <h3>工作方式</h3>
-      <ol><li>20 分鐘需求訪談（線上）</li><li>範本演示與報價</li><li>48–168 小時交付（依方案）</li><li>交付後 7–14 天保固調整</li></ol>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section alt">
-  <div class="container">
-    <h2>聯絡與預約</h2>
-    <p class="lead">丟訊息給我，48 小時內回覆。</p>
-
-    <form class="contact-form" action="https://formspree.io/f/xgvzrzgj" method="POST">
-      <div class="grid-2">
-        <input type="text" name="name" placeholder="你的名字" required>
-        <input type="email" name="_replyto" placeholder="你的 Email" required>
-      </div>
-      <textarea name="message" rows="5" placeholder="請簡述你的需求（行業、預算、時程）" required></textarea>
-      <button class="btn primary" type="submit">送出需求</button>
-    </form>
-
-    <div class="contact-grid">
-      <div class="contact-card"><h4>LINE</h4><p><a href="https://line.me/ti/p/nr0678" target="_blank">LINE</a></p></div>
-      <div class="contact-card"><h4>Telegram</h4><p><a href="https://t.me/Randy_Hau" target="_blank">Telegram</a></p></div>
-      <div class="contact-card"><h4>Email</h4><p><a href="mailto:n.r0225@gmail.com">Email</a></p></div>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>© <span id="year"></span> Randy AI</div>
-    <div class="tiny">Deploy with GitHub Pages</div>
-  </div>
-</footer>
-<script src="script.js"></script>
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+index 3e41ae6e24ccfddf02082ca0aaaa972881373120..e3d75fe6d5a5df5a98a8e055f11837a003a38c0a 100644
+--- a/index.html
++++ b/index.html
+@@ -1,44 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="zh-Hant">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <title>Randy AI 自動化工坊｜覺醒 × 自動化 × 成效</title>
+   <meta name="description" content="用 GPT-5 + 自動化幫你省下 90% 重複工作，把時間還給生活。">
++  <meta name="keywords" content="AI 自動化, 工作流程, 報價單生成, 客服自動化, 內容產製, 關鍵字曝光">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;600;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+ <header class="site-header">
+   <div class="container nav">
+     <a class="logo" href="#">Randy AI</a>
+     <button class="nav-toggle" aria-label="開啟選單" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+     <nav id="menu" class="menu">
+-      <a href="#hero">首頁</a><a href="#services">服務</a><a href="#cases">案例</a><a href="#about">關於</a><a href="#contact">聯絡</a>
++      <a href="#hero">首頁</a><a href="#services">服務</a><a href="#process">流程</a><a href="#painpoints">痛點</a><a href="#cases">案例</a><a href="#about">關於</a><a href="#contact">聯絡</a>
+     </nav>
+   </div>
+ </header>
+ 
+ <section id="hero" class="hero">
+   <div class="container hero-grid">
+     <div class="hero-copy">
+       <h1>覺醒你的業務，自動化你的流程</h1>
+       <p>用 <b>GPT-5</b> + 流程設計 + 雲端自動化，幫你省下 90% 重複工作。專注創作與成交，其餘交給系統。</p>
+       <div class="cta-row">
+         <a href="#contact" class="btn primary">預約 20 分鐘諮詢</a>
+         <a href="#services" class="btn ghost">看看能幫你什麼</a>
+       </div>
+       <div class="badges"><span>48 小時可上線</span><span>雲端部署</span><span>安全合規</span></div>
+     </div>
+     <div class="card">
+       <h3>即刻可交付｜報價單一鍵生成</h3>
+       <ul>
+         <li>收單 → GPT-5 產生估價/提案</li>
+         <li>Google Docs 模板 → PDF → 一鍵寄送</li>
+         <li>含版型與話術，明天就能用</li>
+       </ul>
+     </div>
+   </div>
+ </section>
+diff --git a/index.html b/index.html
+index 3e41ae6e24ccfddf02082ca0aaaa972881373120..e3d75fe6d5a5df5a98a8e055f11837a003a38c0a 100644
+--- a/index.html
++++ b/index.html
+@@ -64,50 +65,84 @@
+ 
+ <section id="services" class="section">
+   <div class="container">
+     <h2>服務｜先給你最有感的三項</h2>
+     <p class="lead">不碰複雜硬體，先用雲端自動化幫你見效。成效跑出來，再擴充。</p>
+     <div class="cards">
+       <article class="svc-card">
+         <h3>#1 報價單一鍵生成系統（雲端版）</h3>
+         <ul><li>收集需求 → GPT-5 自動生成估價/提案</li><li>Docs 模板 → PDF → 一鍵寄送</li><li>可加價：多語、條款庫、品牌版面</li></ul>
+         <div class="pill">48 小時交付</div>
+       </article>
+       <article class="svc-card">
+         <h3>#2 LINE/Telegram 自動客服｜潛客培育</h3>
+         <ul><li>FAQ/產品目錄/導購話術自動回覆</li><li>可串金流/表單/客戶標籤</li><li>可加價：知識庫餵養、營銷腳本</li></ul>
+         <div class="pill">7–10 天交付</div>
+       </article>
+       <article class="svc-card">
+         <h3>#3 內容產製自動化｜字幕、剪輯、上架</h3>
+         <ul><li>長影片 → 自動切片 Shorts/Reels</li><li>自動上字幕、縮圖版型、排程上架</li><li>可加價：多平台同步、腳本生成</li></ul>
+         <div class="pill">5–7 天交付</div>
+       </article>
+     </div>
+   </div>
+ </section>
+ 
++<section id="process" class="section">
++  <div class="container">
++    <h2>基本自動化流程</h2>
++    <ol class="process-list">
++      <li>需求訪談：了解業務瓶頸與目標</li>
++      <li>流程設計：以 AI 與雲端工具規劃步驟</li>
++      <li>開發與測試：快速迭代，驗證成效</li>
++      <li>部署與交付：雲端上線並教學使用</li>
++      <li>持續優化：蒐集數據，擴充與調整</li>
++    </ol>
++  </div>
++</section>
++
++<section id="painpoints" class="section">
++  <div class="container grid-2">
++    <div>
++      <h2>常見痛點</h2>
++      <ul class="ticks">
++        <li>報價與提案耗時，難以快速回應</li>
++        <li>客戶訊息分散，跟進容易漏掉</li>
++        <li>內容產製重複，品質難以維持</li>
++      </ul>
++    </div>
++    <div>
++      <h2>潛在客戶</h2>
++      <ul class="ticks">
++        <li>中小企業與創業團隊</li>
++        <li>行銷內容製作單位</li>
++        <li>自由工作者與顧問</li>
++      </ul>
++    </div>
++  </div>
++</section>
++
+ <section id="cases" class="section alt">
+   <div class="container grid-2">
+     <div>
+       <h2>案例與成效</h2>
+       <p>估價時間：2–3 小時 → <b>10 分鐘內</b></p>
+       <p>漏單率：自動提醒後下降 <b>50%</b></p>
+       <p>省時：每週 ≥ <b>8 小時</b></p>
+     </div>
+     <div class="case-card"><h3>Demo 影片</h3><p>之後可嵌 YouTube 或放流程截圖。</p></div>
+   </div>
+ </section>
+ 
+ <section id="about" class="section">
+   <div class="container grid-2">
+     <div>
+       <h2>關於 Randy</h2>
+       <p>自由接案者，專注把 AI 自動化落地到每一個可省時的環節。經歷低谷也完成覺醒——現在只做一件事：讓系統替你省時間，你替人生創造價值。</p>
+       <ul class="ticks"><li>GPT-5 提示工程/策略</li><li>Google Workspace 自動化</li><li>n8n / Make / Zapier</li><li>Python FastAPI</li></ul>
+     </div>
+     <div class="about-card">
+       <h3>工作方式</h3>
+       <ol><li>20 分鐘需求訪談（線上）</li><li>範本演示與報價</li><li>48–168 小時交付（依方案）</li><li>交付後 7–14 天保固調整</li></ol>
+     </div>
+   </div>
+ </section>
+ 
+EOF
+)
