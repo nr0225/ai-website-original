@@ -4,4 +4,4 @@
 
 聯絡 Email：n.r0225@gmail.com
 
-若啟用 GitHub Pages，請在 README 補上公開網址。
+公開網址：https://nr0225.github.io/ai-website-original/
