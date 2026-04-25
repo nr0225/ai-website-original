@@ -4,4 +4,6 @@
 
 聯絡 Email：n.r0225@gmail.com
 
+LINE：網站聯絡區提供 QR code
+
 公開網址：https://nr0225.github.io/ai-website-original/
